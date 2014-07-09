@@ -8,7 +8,7 @@ Installation
 
 A bower package is available to install this repo into your project. We recommend using this method to install Gumby and any extra UI modules, however you can alternatively move the individuals files into your project.
 
-	$ bower install gumby-parallax
+	$ bower install https://github.com/Harz-FEAR/gumby-tableReflow.git
 
 Include gumby.tablereflow.js in the same fashion as your other UI modules, after gumby.js and before gumby.init.js. In production you should minify JavaScript files into a single optimized gumby.min.js file, ensuring the order (gumby.js, UI modules, gumby.init.js) is retained. 
 
@@ -89,7 +89,7 @@ Using the parallax module is simple. Add a class of `reflow` to a table (the tab
 
 Now resize your browser window and see what happens.
 
-There three variables in the _reflow.scss you may want to override:
+There are three variables in the _reflow.scss you may want to override:
 * `$table-reflow-breakpoint` This is the maximum screen size in which the table is displayed in reflow mode.
 * `$table-reflow-row-margin` The margin between rows in table mode.
 * `$table-reflow-header-min-width` Basicly the left column size in reflow mode.
