@@ -1,5 +1,7 @@
-// .reflow
- $table-reflow-breakpoint: 730px;
+// gumby-tableReflow
+ $table-reflow-breakpoint: 730px !default; 
+ $table-reflow-row-margin: 3em !default;
+ $table-reflow-header-min-width: 40% !default;
 
 /* Mobile first styles: Begin with the stacked presentation at narrow widths */ 
 @media only all {
@@ -15,16 +17,14 @@
 		td, th {
 			text-align: left;
 			display: block;
-			@include font-size($norm);
 
 			/* Make the label elements a percentage width */
 			b.ui-table-cell-label {
 				padding: .4em; 
-				min-width: 30%; 
+				min-width: $table-reflow-header-min-width; 
 				display: inline-block;
 				margin: -.4em 1em -.4em -.4em;
 				font-weight: bold;
-				@include font-size($med);
 			}
 
 			/* For grouped headers, have a different style to visually separate the levels by classing the first label in each col group */ 
@@ -33,15 +33,16 @@
 				padding: .4em 0;
 				margin: .4em 0;
 				text-transform: uppercase;
-				@include font-size($large);
 				font-weight: normal;
 			}
 		}
 
 		/* Add a fair amount of top margin to visually separate each row when stacked */
 		tbody {
-			th {
-				margin-top: 3em;
+			th, td:first-child {
+				padding: 10px;
+				margin-top: $table-reflow-row-margin;
+				font-weight: normal;
 			}
 		}
 	}
@@ -49,7 +50,7 @@
 
 @media ( min-width: $table-reflow-breakpoint ) {
 	.reflow {
-		display: table-row-group;
+		display: table;
 
 		@mixin showheaderrows() {
 			display: table-cell;
@@ -67,6 +68,9 @@
 		tbody {
 			td, th {
 				@include showheaderrows();
+				&:first-child {
+					font-weight: bold;
+				}
 			}
 		}
 
