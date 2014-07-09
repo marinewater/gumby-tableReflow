@@ -1,0 +1,23 @@
+{
+  "name": "gumby-tableReflow",
+  "version": "1.0.0",
+  "authors": [
+    "Harz-FEAR <hartzfear@gmail.com>"
+  ],
+  "description": "fits tables to mobile screens",
+  "main": [
+    "./gumby.tablereflow.js",
+	"./_reflow.scss",
+  ],
+  "keywords": [
+    "gumby"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
