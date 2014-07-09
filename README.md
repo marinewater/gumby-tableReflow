@@ -8,7 +8,7 @@ Installation
 
 A bower package is available to install this repo into your project. We recommend using this method to install Gumby and any extra UI modules, however you can alternatively move the individuals files into your project.
 
-	$ bower install https://github.com/Harz-FEAR/gumby-tableReflow.git
+	$ bower install gumby-tableReflow
 
 Include gumby.tablereflow.js in the same fashion as your other UI modules, after gumby.js and before gumby.init.js. In production you should minify JavaScript files into a single optimized gumby.min.js file, ensuring the order (gumby.js, UI modules, gumby.init.js) is retained. 
 
