@@ -1,14 +1,12 @@
 {
   "name": "gumby-tableReflow",
   "version": "1.0.0",
+  "homepage": "https://github.com/Harz-FEAR/gumby-tableReflow",
   "authors": [
     "Harz-FEAR <hartzfear@gmail.com>"
   ],
+  "main": ["./gumby.tablereflow.js", "./_reflow.scss"],
   "description": "fits tables to mobile screens",
-  "main": [
-    "./gumby.tablereflow.js",
-	"./_reflow.scss",
-  ],
   "keywords": [
     "gumby"
   ],
