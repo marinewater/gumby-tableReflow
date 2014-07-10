@@ -1,7 +1,7 @@
 Gumby tableReflow Module
 =================
 
-This UI module is na implementation of the [JQuery Mobile Table Reflow Widget](http://demos.jquerymobile.com/1.4.3/table-reflow/) for the Gumby Framework.
+This UI module is an implementation of the [JQuery Mobile Table Reflow Widget](http://demos.jquerymobile.com/1.4.3/table-reflow/) for the Gumby Framework.
 
 Installation
 ------------
