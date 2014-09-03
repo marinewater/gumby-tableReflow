@@ -38,54 +38,56 @@ Usage
 
 Using the parallax module is simple. Add a class of `reflow` to a table (the table has to use tbody and thead):
 
-	<table class="reflow">
-		<thead>
-			<tr>
-				<th>Lorem.</th>
-				<th>Voluptas.</th>
-				<th>At.</th>
-				<th>Esse.</th>
-				<th>Odio!</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Lorem ipsum.</td>
-				<td>Quisquam, ipsa.</td>
-				<td>Quo, hic?</td>
-				<td>Reiciendis, minima.</td>
-				<td>Totam, necessitatibus.</td>
-			</tr>
-			<tr>
-				<td>Lorem ipsum.</td>
-				<td>Nesciunt, neque.</td>
-				<td>Quo, ullam.</td>
-				<td>Facilis, omnis.</td>
-				<td>Quisquam, iure.</td>
-			</tr>
-			<tr>
-				<td>Lorem ipsum.</td>
-				<td>Eius, error.</td>
-				<td>A, quia!</td>
-				<td>Sunt, obcaecati.</td>
-				<td>Voluptates, est.</td>
-			</tr>
-			<tr>
-				<td>Lorem ipsum.</td>
-				<td>Sunt, aliquam.</td>
-				<td>Nobis, dolor.</td>
-				<td>Deserunt, autem.</td>
-				<td>Quis, ipsa?</td>
-			</tr>
-			<tr>
-				<td>Lorem ipsum.</td>
-				<td>Necessitatibus, at!</td>
-				<td>Debitis, recusandae.</td>
-				<td>Molestias, quas.</td>
-				<td>Praesentium, totam!</td>
-			</tr>
-		</tbody>
-	</table>
+```html
+<table class="reflow">
+	<thead>
+		<tr>
+			<th>Lorem.</th>
+			<th>Voluptas.</th>
+			<th>At.</th>
+			<th>Esse.</th>
+			<th>Odio!</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Lorem ipsum.</td>
+			<td>Quisquam, ipsa.</td>
+			<td>Quo, hic?</td>
+			<td>Reiciendis, minima.</td>
+			<td>Totam, necessitatibus.</td>
+		</tr>
+		<tr>
+			<td>Lorem ipsum.</td>
+			<td>Nesciunt, neque.</td>
+			<td>Quo, ullam.</td>
+			<td>Facilis, omnis.</td>
+			<td>Quisquam, iure.</td>
+		</tr>
+		<tr>
+			<td>Lorem ipsum.</td>
+			<td>Eius, error.</td>
+			<td>A, quia!</td>
+			<td>Sunt, obcaecati.</td>
+			<td>Voluptates, est.</td>
+		</tr>
+		<tr>
+			<td>Lorem ipsum.</td>
+			<td>Sunt, aliquam.</td>
+			<td>Nobis, dolor.</td>
+			<td>Deserunt, autem.</td>
+			<td>Quis, ipsa?</td>
+		</tr>
+		<tr>
+			<td>Lorem ipsum.</td>
+			<td>Necessitatibus, at!</td>
+			<td>Debitis, recusandae.</td>
+			<td>Molestias, quas.</td>
+			<td>Praesentium, totam!</td>
+		</tr>
+	</tbody>
+</table>
+```
 
 Now resize your browser window and see what happens.
 
