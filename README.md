@@ -8,29 +8,35 @@ Installation
 
 A bower package is available to install this repo into your project. We recommend using this method to install Gumby and any extra UI modules, however you can alternatively move the individuals files into your project.
 
-	$ bower install gumby-tableReflow
+```bash
+$ bower install gumby-tableReflow
+```
 
 Include gumby.tablereflow.js in the same fashion as your other UI modules, after gumby.js and before gumby.init.js. In production you should minify JavaScript files into a single optimized gumby.min.js file, ensuring the order (gumby.js, UI modules, gumby.init.js) is retained. 
 
-	<!--
-	Include gumby.js followed by UI modules.
-	Or concatenate and minify into a single file-->
-	<script src="js/libs/gumby.js"></script>
-	<script src="js/libs/ui/gumby.skiplink.js"></script>
-	<script src="js/libs/ui/gumby.toggleswitch.js"></script>
-	<!-- included from Bower's components directory -->
-	<script src="components/gumby.tablereflow.js"></script>
-	<script src="js/libs/gumby.init.js"></script>
-	
-	<!-- In production minifiy and combine the above files into gumby.min.js -->
-	<script src="js/libs/gumby.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+```html
+<!--
+Include gumby.js followed by UI modules.
+Or concatenate and minify into a single file-->
+<script src="js/libs/gumby.js"></script>
+<script src="js/libs/ui/gumby.skiplink.js"></script>
+<script src="js/libs/ui/gumby.toggleswitch.js"></script>
+<!-- included from Bower's components directory -->
+<script src="components/gumby.tablereflow.js"></script>
+<script src="js/libs/gumby.init.js"></script>
+
+<!-- In production minifiy and combine the above files into gumby.min.js -->
+<script src="js/libs/gumby.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+```
 	
 Import the _reflow.scss partial in the same fashion as your other imports. Once you compile sass you are good to go.
 
-	// imported from Bower's components directory
-	@import "../components/reflow";
+```scss
+// imported from Bower's components directory
+@import "../components/reflow";
+```
 
 
 Usage
